@@ -15,7 +15,7 @@ namespace Chapter12_Exercises
             const string FILENAME = "FriendRecord.txt";
             string response = "";
 
-            FileStream outFile = new FileStream("FriendRecord.txt", FileMode.OpenOrCreate, FileAccess.Write);
+            FileStream outFile = new FileStream(FILENAME, FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter writer = new StreamWriter(outFile);
 
             while (response != END)
