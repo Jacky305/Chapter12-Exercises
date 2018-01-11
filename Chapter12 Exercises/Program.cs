@@ -10,7 +10,7 @@ namespace Chapter12_Exercises
     {
         static void Main(string[] args)
         {
-            Exercise2.Run(args);
+            Exercise4.Run(args);
         }
     }
 }
