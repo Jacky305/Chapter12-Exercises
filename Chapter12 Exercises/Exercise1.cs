@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Chapter12_Exercises
 {
@@ -18,7 +19,14 @@ namespace Chapter12_Exercises
                 Console.WriteLine("Enter folder name >> ");
                 temp = Console.ReadLine();
 
-
+                if(Directory.Exists(temp))
+                {
+                    Console.WriteLine("{0}", Directory.GetCreationTime(temp));
+                }
+                else
+                {
+                    Console.WriteLine("Directory does not exist.");
+                }
             }
         }
     }
