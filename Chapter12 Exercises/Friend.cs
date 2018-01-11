@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chapter12_Exercises
 {
+    [Serializable]
     class Friend
     {
         public string FirstName { get; set; }
